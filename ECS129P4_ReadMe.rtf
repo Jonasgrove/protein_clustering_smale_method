@@ -1,0 +1,57 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf840
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 1. Begin by entering the number of sequences that you want to compare to each other. This value will be used to determine how many times to prompt the user for input data.  \
+
+\b Please enter the number of sequences to find the distance between: 3
+\b0 \
+\
+2. Enter the sequence ID as shown\
+
+\b Please enter the name of the sequence ID: Seq1.py
+\b0 \
+\
+3. Enter the file name as shown\
+
+\b Please enter sequence file name: Seq1.py
+\b0 \
+\
+4. Repeat steps 2 and 3 for the number of times indicated by step 1. Each time the steps are repeated the sequence names are added to a list called seqStrings and the sequence file names are used to open files and add the sequences from the files into a list called seqList.\
+\
+5. Enter the value for beta.\
+
+\b please enter value for beta\
+.01\
+\
+
+\b0 6.Enter the file name for the matrix which will be used for the calculation. \
+
+\b What is the name of the input file to get the matrix\
+BLOSUM62.py
+\b0 \
+
+\b \
+
+\b0 7. The program now iterates through the sequence list and upon each iteration, iterates through the list again and calls the function donkeyKong, which calculates the distance between the two proteins and stores these values in a matrix. \
+\
+8. The program then calls a function called printResults, which will print the sequence IDs of the individual pairwise comparisons and the distances generated from the users input. \
+\
+9. Now enter whether or not you want to cluster the results. \
+
+\b Do you want to cluster results?YES
+\b0 \
+\
+10. Enter how many clusters you want to group the data into.\
+
+\b how many clusters do you want to make?2
+\b0 \
+\
+11. The program now creates a graph object using a graph class and then creates a minimum spanning tree using Kruskal\'92s algorithm. The implementation of the graph class and the Kruskal\'92s implementation was based off of the implementation found on geeksforgeeks.com. This method returns a list of edges as shown; [[node1,node2,edge weight]]. \
+\
+12. Now the program creates clusters by removing the maximum wighted K-1 edges. The edges are printed as shown. Nodes which do not have an edge are not shown and have formed an individual cluster of size 1.\
+
+\b [['Seq1', 'Seq3', 0.006957695036688367]]}
